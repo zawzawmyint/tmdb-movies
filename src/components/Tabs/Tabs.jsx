@@ -12,10 +12,10 @@ const Tabs = ({ viewedTab = 0, setViewedTab }) => {
       sx={{
         display: "flex",
         position: "sticky",
-        top: 70,
+        top: isNonMobileScreens ? 60 : 100,
         width: "100%",
         backgroundColor: "#e6f9ff",
-        zIndex: 400,
+        zIndex: 500,
         py: 2,
       }}
     >

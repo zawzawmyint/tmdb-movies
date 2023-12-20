@@ -1,11 +1,13 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import SearchBar from "../SearchBar/SearchBar";
 
 const Header = ({ handleChange }) => {
+  const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
+
   return (
     <Stack
-      direction={"row"}
+      direction={isNonMobileScreens ? "row" : "column"}
       width={"100%"}
       spacing={1}
       sx={{
@@ -13,13 +15,14 @@ const Header = ({ handleChange }) => {
         top: 0,
         zIndex: 500,
         backgroundColor: "#e6f9ff",
-        py: 3,
+        py: 2,
+        textAlign: "center",
       }}
     >
       <Typography variant="h4" fontWeight={"bold"}>
         TMDB Movies
       </Typography>
-      <Box width={"80%"}>
+      <Box width={isNonMobileScreens ? "80%" : "100%"}>
         <SearchBar handleChange={handleChange} />
       </Box>
     </Stack>
