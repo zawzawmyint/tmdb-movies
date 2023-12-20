@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+## Installation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Clone the repository
+git clone https://github.com/zawzawmyint/tmdb-movies.git
+
+# Move to the project directory
+cd tmdb-movies
+
+# Install dependencies
+npm install
 
 ## Available Scripts
 
