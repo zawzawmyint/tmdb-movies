@@ -1,12 +1,12 @@
 ## Installation
 
-# Clone the repository
+## Clone the repository
 git clone https://github.com/zawzawmyint/tmdb-movies.git
 
-# Move to the project directory
+## Move to the project directory
 cd tmdb-movies
 
-# Install dependencies
+## Install dependencies
 npm install
 
 ## Available Scripts
